@@ -1,6 +1,8 @@
-'([rwa]\+?)'\)"""AnyGen CLI — Generate docs, slides, websites and more via AnyGen cloud API.
-"$1", encoding="utf-8")
-'$1', encoding="utf-8")    # One-shot commands
+#!/usr/bin/env python3
+"""AnyGen CLI — Generate docs, slides, websites and more via AnyGen cloud API.
+
+Usage:
+    # One-shot commands
     cli-anything-anygen task run --operation slide --prompt "AI trends presentation" --output ./
     cli-anything-anygen task create --operation doc --prompt "Technical report"
     cli-anything-anygen task status <task-id>
