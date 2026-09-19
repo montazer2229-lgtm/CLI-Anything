@@ -47,6 +47,6 @@ def save_config(host: str, port: int, username: str, password: str,
     path.parent.mkdir(parents=True, exist_ok=True)
     data = {"host": host, "port": port, "username": username, "password": password,
             "https": https}
-    with open(path, "w") as f:
+    with open(path, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2)
     return path
